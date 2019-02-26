@@ -2,19 +2,78 @@
   {
     "outputFileName": "wwwroot/css/site.min.css",
     "inputFiles": [
-      "wwwroot/css/site.css",
-      "wwwroot/css/custom.css"
-    ]
+      "wwwroot/css/site.css"
+    ],
+    "minify": {
+      "enabled": true
+    }
   },
   {
-    "outputFileName": "wwwroot/js/site.min.js",
+    "outputFileName": "wwwroot/js/bootstrap.min.js",
+    "inputFiles": [ "node_modules/bootstrap/dist/js/bootstrap.min.js" ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/js/jquery.min.js",
+    "inputFiles": [ "node_modules/jquery/dist/jquery.min.js" ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/js/popper.min.js",
+    "inputFiles": [ "node_modules/popper.js/dist/umd/popper.min.js" ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/js/jquery.validate.js",
+    "inputFiles": [ "node_modules/jquery-validation/dist/jquery.validate.js" ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/js/jquery.validate.min.js",
+    "inputFiles": [ "node_modules/jquery-validation/dist/jquery.validate.min.js" ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/js/jquery.validate.unobtrusive.js",
+    "inputFiles": [ "node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/js/jquery.validate.unobtrusive.min.js",
+    "inputFiles": [ "node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/js/trix.js",
+    "inputFiles": [ "node_modules/trix/dist/trix.js" ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/css/trix.css",
+    "inputFiles": [ "node_modules/trix/dist/trix.css" ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/css/datetimepicker.min.css",
+    "inputFiles": [ "node_modules/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css" ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/js/datetimepicker.min.js",
     "inputFiles": [
-      "wwwroot/js/site.js"
+      "node_modules/moment/min/moment.min.js",
+      "node_modules/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js"
+    ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/js/site.js",
+    "inputFiles": [
+      "Scripts/cookies.js"
     ],
     "minify": {
       "enabled": true,
       "renameLocals": true
-    },
-    "sourceMap": false
+    }
   }
 ]
